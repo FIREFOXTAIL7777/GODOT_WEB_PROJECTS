@@ -16,11 +16,6 @@ run/main_scene="uid://b1yn1tsjets5y"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="uid://dxaxdkygrbct2"
 
-[display]
-
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
-
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
