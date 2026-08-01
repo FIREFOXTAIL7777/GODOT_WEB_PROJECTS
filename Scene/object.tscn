@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b4fcnlp0hlm3u"]
+
+[ext_resource type="Texture2D" uid="uid://dejbuywjiadvt" path="res://Asset/All free tiles.png" id="1_1cphs"]
+[ext_resource type="Script" uid="uid://djkkcn7n3uqsb" path="res://Scene/object.gd" id="1_moavv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(13.172039, 5.8850718)
+
+[node name="Object" type="CharacterBody2D" unique_id=1884205945]
+y_sort_enabled = true
+script = ExtResource("1_moavv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=262591766]
+y_sort_enabled = true
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_1cphs")
+offset = Vector2(0, -12)
+region_enabled = true
+region_rect = Rect2(32, 21, 16, 27)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1154496372]
+z_index = 1
+position = Vector2(0.22335437, -4.475714)
+scale = Vector2(3.02, 3.02)
+shape = SubResource("RectangleShape2D_g4v7s")
