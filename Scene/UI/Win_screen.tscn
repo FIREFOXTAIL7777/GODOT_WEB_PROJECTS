@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://c3r7sp7sjfrar"]
+
+[ext_resource type="Script" uid="uid://xme1xnxci864" path="res://Script/win_screen.gd" id="1_152um"]
+[ext_resource type="Texture2D" uid="uid://cutlpdfjcofck" path="res://Asset/Sprite/Screenshot 2026-08-02 094318.png" id="2_vop7e"]
+[ext_resource type="FontFile" uid="uid://dj5mga28bv23f" path="res://Asset/fonts/prstart.ttf" id="3_yr7gb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g4v7s"]
+texture = ExtResource("2_vop7e")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xt047"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.326)
+shadow_size = 6
+shadow_offset = Vector2(0, 6.925)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hytm2"]
+bg_color = Color(0.6323955, 0.63239557, 0.6323955, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.326)
+shadow_size = 6
+shadow_offset = Vector2(0, 6.925)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycrsp"]
+bg_color = Color(0.82748455, 0.8274846, 0.82748455, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.326)
+shadow_size = 6
+shadow_offset = Vector2(0, 6.925)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ycrsp"]
+
+[node name="WinScreen" type="Control" unique_id=1335841316]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_152um")
+
+[node name="Panel" type="Panel" parent="." unique_id=196334484]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_g4v7s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2108502904]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -221.0
+offset_top = -9.0
+offset_right = 221.0
+offset_bottom = 174.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 18
+
+[node name="Restart" type="Button" parent="VBoxContainer" unique_id=2096611291]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_xt047")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hytm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ycrsp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ycrsp")
+text = "Restart"
+
+[node name="Exit" type="Button" parent="VBoxContainer" unique_id=210975521]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_xt047")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hytm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ycrsp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ycrsp")
+text = "Exit"
+
+[node name="Label" type="Label" parent="." unique_id=1702676987]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -322.0
+offset_top = 99.0
+offset_right = 322.0
+offset_bottom = 246.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -9
+theme_override_constants/shadow_offset_y = 12
+theme_override_fonts/font = ExtResource("3_yr7gb")
+theme_override_font_sizes/font_size = 92
+text = "You Win"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

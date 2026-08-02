@@ -1,0 +1,299 @@
+[gd_scene format=3 uid="uid://vj1tht3kfryh"]
+
+[ext_resource type="Texture2D" uid="uid://cutlpdfjcofck" path="res://Asset/Sprite/Screenshot 2026-08-02 094318.png" id="1_xt047"]
+[ext_resource type="Script" uid="uid://csu3m7q1tqn23" path="res://Script/main_menu.gd" id="1_ycrsp"]
+[ext_resource type="FontFile" uid="uid://dj5mga28bv23f" path="res://Asset/fonts/prstart.ttf" id="2_hytm2"]
+[ext_resource type="Script" uid="uid://bq5kgtifp7jw2" path="res://Script/option_panel.gd" id="4_ba4p0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g4v7s"]
+texture = ExtResource("1_xt047")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xt047"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.326)
+shadow_size = 6
+shadow_offset = Vector2(0, 6.925)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hytm2"]
+bg_color = Color(0.6323955, 0.63239557, 0.6323955, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.326)
+shadow_size = 6
+shadow_offset = Vector2(0, 6.925)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycrsp"]
+bg_color = Color(0.82748455, 0.8274846, 0.82748455, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.326)
+shadow_size = 6
+shadow_offset = Vector2(0, 6.925)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ycrsp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfny1"]
+bg_color = Color(0.15594886, 0.15594886, 0.15594886, 0.72800004)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_0ddd0"]
+color = Color(1, 1, 1, 1)
+grow_begin = -1.0
+grow_end = 0.0
+thickness = 11
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ba4p0"]
+bg_color = Color(0.1905272, 0.65956765, 0.79826355, 1)
+
+[node name="MainMenu" type="Control" unique_id=1335841316]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ycrsp")
+
+[node name="Panel" type="Panel" parent="." unique_id=196334484]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_g4v7s")
+
+[node name="MainButtons" type="VBoxContainer" parent="." unique_id=2108502904]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -221.0
+offset_top = -135.0
+offset_right = 221.0
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 18
+
+[node name="StartGame" type="Button" parent="MainButtons" unique_id=2096611291]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_xt047")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hytm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ycrsp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ycrsp")
+text = "Start Game"
+
+[node name="Option" type="Button" parent="MainButtons" unique_id=325647776]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_xt047")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hytm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ycrsp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ycrsp")
+text = "Option"
+
+[node name="Exit" type="Button" parent="MainButtons" unique_id=210975521]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_xt047")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hytm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ycrsp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ycrsp")
+text = "Exit"
+
+[node name="Label" type="Label" parent="." unique_id=1702676987]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -322.0
+offset_top = 16.0
+offset_right = 322.0
+offset_bottom = 163.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -9
+theme_override_constants/shadow_offset_y = 12
+theme_override_fonts/font = ExtResource("2_hytm2")
+theme_override_font_sizes/font_size = 80
+text = "SOKOBAN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionPanel" type="Panel" parent="." unique_id=462410689]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -274.0
+offset_top = -170.0
+offset_right = 274.0
+offset_bottom = 266.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_tfny1")
+script = ExtResource("4_ba4p0")
+
+[node name="Label" type="Label" parent="OptionPanel" unique_id=1333807148]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -177.5
+offset_right = 177.5
+offset_bottom = 77.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 37
+text = "Option"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="Button" parent="OptionPanel" unique_id=1408491617]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -81.0
+offset_right = 173.0
+offset_bottom = -22.0
+grow_vertical = 0
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_xt047")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hytm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ycrsp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ycrsp")
+text = "Back"
+
+[node name="Apply" type="Button" parent="OptionPanel" unique_id=1010464106]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 373.0
+offset_top = -81.0
+offset_right = 526.0
+offset_bottom = -22.0
+grow_vertical = 0
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 37
+theme_override_styles/normal = SubResource("StyleBoxFlat_xt047")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hytm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ycrsp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ycrsp")
+text = "Apply"
+
+[node name="SoundOption" type="VBoxContainer" parent="OptionPanel" unique_id=1421580774]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.0
+offset_top = -101.0
+offset_right = 234.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MasterLabel" type="Label" parent="OptionPanel/SoundOption" unique_id=1881907200]
+layout_mode = 2
+theme_override_font_sizes/font_size = 37
+text = "Master"
+vertical_alignment = 1
+
+[node name="MasterSlider" type="HSlider" parent="OptionPanel/SoundOption" unique_id=633941859]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_0ddd0")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ba4p0")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_ba4p0")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="SFXLabel" type="Label" parent="OptionPanel/SoundOption" unique_id=264406805]
+layout_mode = 2
+theme_override_font_sizes/font_size = 37
+text = "SFX"
+vertical_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="OptionPanel/SoundOption" unique_id=1345404472]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_0ddd0")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ba4p0")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_ba4p0")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="MusicLabel" type="Label" parent="OptionPanel/SoundOption" unique_id=932072420]
+layout_mode = 2
+theme_override_font_sizes/font_size = 37
+text = "Music"
+vertical_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="OptionPanel/SoundOption" unique_id=80630253]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_0ddd0")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ba4p0")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_ba4p0")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[connection signal="pressed" from="MainButtons/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="MainButtons/Option" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="MainButtons/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="OptionPanel/Back" to="." method="_on_back_option_pressed"]
+[connection signal="pressed" from="OptionPanel/Apply" to="." method="_on_apply_pressed"]
+[connection signal="mouse_exited" from="OptionPanel/SoundOption/MasterSlider" to="OptionPanel" method="_on_master_slider_mouse_exited"]
+[connection signal="mouse_exited" from="OptionPanel/SoundOption/SFXSlider" to="OptionPanel" method="_on_sfx_slider_mouse_exited"]
+[connection signal="mouse_exited" from="OptionPanel/SoundOption/MusicSlider" to="OptionPanel" method="_on_music_slider_mouse_exited"]

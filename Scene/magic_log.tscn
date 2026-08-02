@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://psyt520fbwte"]
 
 [ext_resource type="Script" uid="uid://dq7qd461enxpv" path="res://Script/magic_log.gd" id="1_kixkj"]
-[ext_resource type="Texture2D" uid="uid://dejbuywjiadvt" path="res://Asset/All free tiles.png" id="1_q15p8"]
+[ext_resource type="Texture2D" uid="uid://dejbuywjiadvt" path="res://Asset/Sprite/All free tiles.png" id="1_q15p8"]
 
 [sub_resource type="Animation" id="Animation_q15p8"]
 resource_name = "Particle"

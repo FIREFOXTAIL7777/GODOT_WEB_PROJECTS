@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://qtu8ibxnl4ht"]
 
 [ext_resource type="Script" uid="uid://lt1slrd2oxwn" path="res://Script/player.gd" id="1_y8w33"]
-[ext_resource type="Texture2D" uid="uid://dsrn3mh4e0itm" path="res://Asset/sokobanPlayerSprite.png" id="2_y8w33"]
+[ext_resource type="Texture2D" uid="uid://dsrn3mh4e0itm" path="res://Asset/Sprite/sokobanPlayerSprite.png" id="2_y8w33"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wm77i"]
 size = Vector2(28, 15)
 
 [node name="Player" type="CharacterBody2D" unique_id=28887730 groups=["Player"]]
+collision_layer = 32
+collision_mask = 65
 motion_mode = 1
 safe_margin = 15.0
 script = ExtResource("1_y8w33")

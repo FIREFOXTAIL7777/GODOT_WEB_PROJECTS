@@ -7,6 +7,7 @@ size = Vector2(19, 11.5)
 
 [node name="Plate" type="Area2D" unique_id=1353334113]
 y_sort_enabled = true
+collision_mask = 64
 monitorable = false
 script = ExtResource("1_gmc4b")
 

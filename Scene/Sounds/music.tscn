@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://rqydnvj7bkwi"]
+
+[ext_resource type="AudioStream" uid="uid://bh4mhqd5rw485" path="res://Asset/Sounds/geoffharvey-lazy-morning-coffee-385886 (1).mp3" id="1_kkapo"]
+
+[node name="Music" type="AudioStreamPlayer2D" unique_id=1325584690]
+stream = ExtResource("1_kkapo")
+autoplay = true
+bus = &"Music"
+parameters/looping = true

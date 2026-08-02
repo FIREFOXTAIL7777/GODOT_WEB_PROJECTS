@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bh4mhqd5rw485"
+path="res://.godot/imported/geoffharvey-lazy-morning-coffee-385886 (1).mp3-df43b233f2a79b6f89277225b4125efe.mp3str"
+
+[deps]
+
+source_file="res://Asset/Sounds/geoffharvey-lazy-morning-coffee-385886 (1).mp3"
+dest_files=["res://.godot/imported/geoffharvey-lazy-morning-coffee-385886 (1).mp3-df43b233f2a79b6f89277225b4125efe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
