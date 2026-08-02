@@ -547,9 +547,11 @@ sources/0 = SubResource("TileSetAtlasSource_dueu4")
 [node name="Level_1" type="Node2D" unique_id=1822196633]
 script = ExtResource("1_wm77i")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1134649399]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1584197619]
+process_mode = 3
+layer = 10
 
-[node name="Level" type="Label" parent="CanvasLayer" unique_id=543619471]
+[node name="Level" type="Label" parent="CanvasLayer" unique_id=264702666]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -565,13 +567,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SettingUI" parent="CanvasLayer" unique_id=1335841316 instance=ExtResource("10_dueu4")]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
+z_index = 10
+metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=1741001880]
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1425456748]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -585,7 +584,7 @@ text = "Press Esc for Option"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="CanvasLayer" unique_id=2077592461]
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=1004526808]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -599,7 +598,7 @@ text = "Instruction:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="CanvasLayer/Label2" unique_id=1564331905]
+[node name="Label2" type="Label" parent="CanvasLayer/Label2" unique_id=1936356968]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
