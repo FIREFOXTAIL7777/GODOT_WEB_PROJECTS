@@ -9,6 +9,7 @@ size = Vector2(13.172039, 5.8850718)
 [node name="Object" type="CharacterBody2D" unique_id=1884205945]
 y_sort_enabled = true
 collision_layer = 64
+collision_mask = 65
 script = ExtResource("1_moavv")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=262591766]

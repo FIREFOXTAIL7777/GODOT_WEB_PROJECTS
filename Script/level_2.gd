@@ -1,7 +1,6 @@
 extends Node2D
 
 @onready var lootMusic: AudioStreamPlayer2D = $AudioStreamPlayer2D
-@onready var setting_ui: Control = $SettingUI
 
 var score: = 0
 var max_score: = 0
